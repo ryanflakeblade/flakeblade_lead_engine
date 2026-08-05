@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "canada-leads"
+version = "0.1.0"
+description = "Collect and export Canadian service company leads from Yelp."
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.31.0",
+  "pandas>=2.0.0",
+  "python-dotenv>=1.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

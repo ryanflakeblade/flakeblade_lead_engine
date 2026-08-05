@@ -1,0 +1,38 @@
+name: Monthly Canada Leads Update
+
+on:
+  schedule:
+    - cron: "0 8 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      YELP_API_KEY: ${{ secrets.YELP_API_KEY }}
+      PYTHONPATH: src
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate public JSON
+        run: python -m canada_leads.cli
+
+      - name: Commit updated public data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update Canada leads data"
+          file_pattern: data/public/canada_leads.json
+
