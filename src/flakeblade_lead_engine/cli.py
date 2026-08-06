@@ -3,8 +3,8 @@ from __future__ import annotations
 import argparse
 
 from .config import load_settings
-from .export import export_companies
-from .parser import DEFAULT_TERMS, collect_companies
+from .exports.public_json import export_companies
+from .yelp.parser import DEFAULT_TERMS, collect_companies
 
 
 def parse_args() -> argparse.Namespace:
@@ -30,4 +30,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

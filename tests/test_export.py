@@ -2,10 +2,10 @@ import json
 
 import pandas as pd
 
-from canada_leads.export import build_public_summary, export_companies
-from canada_leads.config import Settings
-from canada_leads.parser import collect_companies
-from canada_leads.phone import to_e164
+from flakeblade_lead_engine.config import Settings
+from flakeblade_lead_engine.exports.public_json import build_public_summary, export_companies
+from flakeblade_lead_engine.sms.phone import to_e164
+from flakeblade_lead_engine.yelp.parser import collect_companies
 
 
 def test_build_public_summary_counts_companies_and_marks_services_without_phone():
@@ -77,7 +77,7 @@ def test_collect_companies_filters_non_canadian_businesses(monkeypatch):
             ]
         )
 
-    monkeypatch.setattr("canada_leads.parser.search_by_service", fake_search_by_service)
+    monkeypatch.setattr("flakeblade_lead_engine.yelp.parser.search_by_service", fake_search_by_service)
 
     settings = Settings(yelp_api_key="test")
     companies = collect_companies(settings, terms=["Snow removal"])

@@ -9,5 +9,4 @@ if (-not (Test-Path ".\.venv\Scripts\Activate.ps1")) {
 
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python -m canada_leads.cli
-
+python -m flakeblade_lead_engine.cli

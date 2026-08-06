@@ -1,4 +1,4 @@
-name: Monthly Canada Leads Update
+name: Monthly Flakeblade Lead Engine Update
 
 on:
   schedule:
@@ -28,11 +28,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate public JSON
-        run: python -m canada_leads.cli
+        run: python -m flakeblade_lead_engine.cli
 
       - name: Commit updated public data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update Canada leads data"
           file_pattern: data/public/canada_leads.json
-
