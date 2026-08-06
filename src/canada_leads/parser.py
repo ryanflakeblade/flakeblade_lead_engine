@@ -6,6 +6,7 @@ import pandas as pd
 
 from .cities import ALL_CITIES
 from .config import Settings
+from .phone import to_e164
 from .yelp_client import YelpClient
 
 
@@ -21,6 +22,8 @@ def normalize_business(
     coordinates = biz.get("coordinates", {})
     categories = biz.get("categories", [])
 
+    display_phone = biz.get("display_phone")
+
     return {
         "id": biz.get("id"),
         "name": biz.get("name"),
@@ -35,7 +38,8 @@ def normalize_business(
         "zip_code": location.get("zip_code"),
         "state": location.get("state"),
         "country": location.get("country"),
-        "phone": biz.get("display_phone"),
+        "phone": to_e164(display_phone),
+        "display_phone": display_phone,
         "categories": ", ".join(cat.get("title", "") for cat in categories),
         "is_closed": biz.get("is_closed"),
         "url": biz.get("url"),
@@ -60,7 +64,10 @@ def collect_companies(settings: Settings, terms: list[str] | None = None) -> pd.
     if combined.empty:
         return combined
 
+    combined = combined[combined["country"].fillna("") == settings.target_country].copy()
+    if combined.empty:
+        return combined
+
     combined["phone"] = combined["phone"].fillna("")
     combined = combined.sort_values(["phone", "review_count"], ascending=[True, False])
     return combined.drop_duplicates(subset=["phone"], keep="first")
-

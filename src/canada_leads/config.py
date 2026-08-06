@@ -17,6 +17,8 @@ class Settings:
     output_json: Path = PROJECT_ROOT / "data" / "public" / "canada_leads.json"
     radius_meters: int = 40000
     page_limit: int = 50
+    max_search_results: int = 240
+    target_country: str = "CA"
 
 
 def load_settings() -> Settings:
@@ -27,4 +29,3 @@ def load_settings() -> Settings:
             "Missing YELP_API_KEY. Set it in your environment or in a local .env file."
         )
     return Settings(yelp_api_key=api_key)
-

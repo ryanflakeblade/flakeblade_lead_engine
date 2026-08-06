@@ -21,7 +21,13 @@ class YelpClient:
             }
         )
 
-    def search_page(self, location: dict[str, Any], term: str, offset: int = 0) -> dict[str, Any]:
+    def search_page(
+        self,
+        location: dict[str, Any],
+        term: str,
+        offset: int = 0,
+        limit: int | None = None,
+    ) -> dict[str, Any]:
         params = {
             "latitude": location["latitude"],
             "longitude": location["longitude"],
@@ -29,10 +35,12 @@ class YelpClient:
             "radius": self.settings.radius_meters,
             "categories": "snow removal",
             "sort_by": "best_match",
-            "limit": self.settings.page_limit,
+            "limit": limit or self.settings.page_limit,
             "offset": offset,
         }
         response = self.session.get(YELP_SEARCH_URL, params=params, timeout=30)
+        if response.status_code >= 400:
+            print(f"Yelp API error for {location['city']} {term} offset={offset}: {response.text}")
         response.raise_for_status()
         return response.json()
 
@@ -41,15 +49,19 @@ class YelpClient:
         offset = 0
 
         while True:
-            data = self.search_page(location, term, offset=offset)
+            remaining = self.settings.max_search_results - offset
+            limit = min(self.settings.page_limit, remaining)
+            if limit <= 0:
+                break
+
+            data = self.search_page(location, term, offset=offset, limit=limit)
             page_businesses = data.get("businesses", [])
             businesses.extend(page_businesses)
 
-            total = min(data.get("total", 0), 1000)
-            offset += self.settings.page_limit
+            total = min(data.get("total", 0), self.settings.max_search_results)
+            offset += limit
             if not page_businesses or offset >= total:
                 break
 
         print(f"Get {location['city']} {term} {len(businesses)} records")
         return businesses
-

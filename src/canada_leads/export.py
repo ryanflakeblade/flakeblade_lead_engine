@@ -7,15 +7,42 @@ from pathlib import Path
 import pandas as pd
 
 
-def _with_phone(series: pd.Series) -> int:
-    return int(series.fillna("").astype(str).str.strip().ne("").sum())
+SERVICE_LABELS = {
+    "lawn mowing": "lawn_mowing",
+    "snow removal": "snow_removal",
+}
+
+
+def _service_key(search_term: object) -> str:
+    value = str(search_term).strip().lower()
+    return SERVICE_LABELS.get(value, value.replace(" ", "_"))
+
+
+def _service_summary(group: pd.DataFrame) -> dict:
+    counts = {
+        _service_key(service): int(len(service_group))
+        for service, service_group in group.groupby("search_term", dropna=False)
+    }
+    service_keys = sorted(counts)
+    if {"lawn_mowing", "snow_removal"}.issubset(service_keys):
+        service_status = "both"
+    elif service_keys:
+        service_status = service_keys[0]
+    else:
+        service_status = "none"
+
+    return {
+        "service_status": service_status,
+        "services": service_keys,
+        "service_counts": counts,
+    }
 
 
 def build_public_summary(df: pd.DataFrame) -> dict:
     if df.empty:
         return {
             "updated_at": datetime.now(UTC).date().isoformat(),
-            "totals": {"companies": 0, "cities": 0, "with_phone": 0},
+            "totals": {"companies": 0, "cities": 0},
             "regions": [],
             "cities": [],
             "services": [],
@@ -29,9 +56,9 @@ def build_public_summary(df: pd.DataFrame) -> dict:
                 "region": region,
                 "city": city,
                 "companies": int(len(group)),
-                "with_phone": _with_phone(group["phone"]),
                 "latitude": float(group["latitude"].dropna().mean()) if group["latitude"].notna().any() else None,
                 "longitude": float(group["longitude"].dropna().mean()) if group["longitude"].notna().any() else None,
+                **_service_summary(group),
             }
         )
 
@@ -40,7 +67,7 @@ def build_public_summary(df: pd.DataFrame) -> dict:
         {
             "region": region,
             "companies": int(len(group)),
-            "with_phone": _with_phone(group["phone"]),
+            **_service_summary(group),
         }
         for region, group in region_group
     ]
@@ -48,9 +75,9 @@ def build_public_summary(df: pd.DataFrame) -> dict:
     service_group = df.groupby("search_term", dropna=False)
     services = [
         {
-            "service": service,
+            "service": _service_key(service),
+            "label": service,
             "companies": int(len(group)),
-            "with_phone": _with_phone(group["phone"]),
         }
         for service, group in service_group
     ]
@@ -60,7 +87,7 @@ def build_public_summary(df: pd.DataFrame) -> dict:
         "totals": {
             "companies": int(len(df)),
             "cities": int(df["search_city"].nunique()),
-            "with_phone": _with_phone(df["phone"]),
+            **_service_summary(df),
         },
         "regions": sorted(regions, key=lambda item: item["companies"], reverse=True),
         "cities": sorted(cities, key=lambda item: item["companies"], reverse=True),
@@ -76,4 +103,3 @@ def export_companies(df: pd.DataFrame, csv_path: Path, json_path: Path) -> None:
 
     summary = build_public_summary(df)
     json_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
-

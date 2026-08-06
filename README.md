@@ -33,6 +33,18 @@ data/public/canada_leads.json
 
 `data/public/canada_leads.json` is the file your WordPress site can read.
 
+Generate a public SVG coverage image from the JSON:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\generate_coverage_image.py
+```
+
+Output:
+
+```text
+data/public/canada_leads_coverage.svg
+```
+
 ## Tests
 
 Install development dependencies:
