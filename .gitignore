@@ -1,6 +1,6 @@
 .env
 .venv/
-yelp/
+/yelp/
 __pycache__/
 *.pyc
 *.egg-info/
