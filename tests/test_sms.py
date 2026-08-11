@@ -95,6 +95,28 @@ def test_load_recipients_adds_sms_status_columns(tmp_path):
     assert {"sms_status", "sms_message_sid", "sms_error"}.issubset(recipients.columns)
 
 
+def test_load_recipients_combines_multiple_files_and_dedupes_by_phone(tmp_path):
+    input_a = tmp_path / "a.csv"
+    input_b = tmp_path / "b.csv"
+    pd.DataFrame(
+        [
+            {"name": "A", "phone": "(514) 555-0101", "search_region": "Greater Montreal"},
+            {"name": "B", "phone": "+16135550101", "search_region": "Ottawa"},
+        ]
+    ).to_csv(input_a, index=False)
+    pd.DataFrame(
+        [
+            {"name": "A Duplicate", "phone": "+1 514-555-0101", "search_region": "Greater Montreal"},
+            {"name": "C", "phone": "+14165550101", "search_region": "Toronto"},
+        ]
+    ).to_csv(input_b, index=False)
+
+    recipients = load_recipients([input_a, input_b])
+
+    assert recipients["phone"].tolist() == ["+15145550101", "+16135550101", "+14165550101"]
+    assert recipients["name"].tolist() == ["A", "B", "C"]
+
+
 def test_load_recipients_requires_name_and_phone(tmp_path):
     input_path = tmp_path / "companies.csv"
     pd.DataFrame([{"name": "A"}]).to_csv(input_path, index=False)

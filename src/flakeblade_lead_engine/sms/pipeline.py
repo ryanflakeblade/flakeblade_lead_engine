@@ -1,23 +1,44 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Iterable
 
 import pandas as pd
 
 from .client import SmsClient
+from .phone import to_e164
 from .templates import dealer_intro_message
 
 
 SENT_STATUSES = {"sent", "dry_run"}
 
 
-def load_recipients(input_path: Path) -> pd.DataFrame:
-    df = pd.read_csv(input_path, dtype={"phone": str}, keep_default_na=False)
+def _as_input_paths(input_path: Path | Iterable[Path]) -> list[Path]:
+    if isinstance(input_path, Path):
+        return [input_path]
+    return list(input_path)
+
+
+def _dedupe_by_phone(df: pd.DataFrame) -> pd.DataFrame:
+    if df.empty:
+        return df
+
+    df = df.copy()
+    df["phone"] = df["phone"].fillna("").map(to_e164)
+    with_phone = df[df["phone"].ne("")].drop_duplicates(subset=["phone"], keep="first")
+    without_phone = df[df["phone"].eq("")]
+    return pd.concat([with_phone, without_phone], ignore_index=True)
+
+
+def load_recipients(input_path: Path | Iterable[Path]) -> pd.DataFrame:
+    frames = [pd.read_csv(path, dtype={"phone": str}, keep_default_na=False) for path in _as_input_paths(input_path)]
+    df = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
     required = {"name", "phone"}
     missing = required - set(df.columns)
     if missing:
         raise ValueError(f"Missing required CSV columns: {', '.join(sorted(missing))}")
 
+    df = _dedupe_by_phone(df)
     if "sms_status" not in df.columns:
         df["sms_status"] = ""
     if "sms_message_sid" not in df.columns:
@@ -65,7 +86,7 @@ def summarize_regions(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def send_campaign(
-    input_path: Path,
+    input_path: Path | Iterable[Path],
     output_path: Path,
     client: SmsClient,
     region: str | None = None,

@@ -9,4 +9,8 @@ data/raw/
 data/processed/
 data/manual/*.csv
 !data/manual/special_recipients.example.csv
+data/crm_sources/**/*.csv
+data/crm_sources/**/*.xlsx
+data/crm_sources/**/*.xls
+!data/crm_sources/**/*.example.csv
 *.log

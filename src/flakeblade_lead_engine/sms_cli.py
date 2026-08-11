@@ -12,9 +12,10 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Send or preview SMS outreach from companies.csv.")
     parser.add_argument(
         "--input",
+        nargs="+",
         type=Path,
-        default=PROJECT_ROOT / "data" / "processed" / "companies.csv",
-        help="Input companies CSV.",
+        default=[PROJECT_ROOT / "data" / "processed" / "companies.csv"],
+        help="Input companies CSV file(s). Multiple files are combined and deduped by phone.",
     )
     parser.add_argument(
         "--output",
