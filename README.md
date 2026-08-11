@@ -17,6 +17,11 @@ Edit `.env` and set:
 ```text
 YELP_API_KEY=your_yelp_api_key
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+SMTP_HOST=your_smtp_host
+SMTP_PORT=587
+SMTP_USERNAME=your_smtp_username
+SMTP_PASSWORD=your_smtp_password
+SMTP_FROM_EMAIL=your_from_email
 ```
 
 ## Run
@@ -262,6 +267,70 @@ python -m flakeblade_lead_engine.sms_cli --region Ottawa --service "Snow removal
 ```
 
 Use `--send` with the same filters when ready to send.
+
+## Email Outreach
+
+The email step reads a CRM CSV with an `email` or `Email` column. It is useful
+for private source files such as:
+
+```text
+data/crm_sources/rgcq/rgcq_leads.csv
+```
+
+and writes:
+
+```text
+data/processed/email_results.csv
+```
+
+The default mode is a dry run. It does not connect to SMTP and does not send
+real email unless `--send` is provided.
+
+List available email recipients from the default RGCQ file:
+
+```powershell
+python -m flakeblade_lead_engine.email_cli --list
+```
+
+Dry-run the first 10 RGCQ email recipients:
+
+```powershell
+python -m flakeblade_lead_engine.email_cli --limit 10
+```
+
+Rows processed in preview mode will be marked:
+
+```text
+email_status=dry_run
+```
+
+Required `.env` values for real sending:
+
+```text
+SMTP_HOST=
+SMTP_PORT=587
+SMTP_USERNAME=
+SMTP_PASSWORD=
+SMTP_FROM_EMAIL=
+```
+
+Only add `--send` after reviewing the email template and dry-run output:
+
+```powershell
+python -m flakeblade_lead_engine.email_cli --limit 10 --send
+```
+
+Use another CRM file:
+
+```powershell
+python -m flakeblade_lead_engine.email_cli --input data/crm_sources/rgcq/rgcq_leads.csv --limit 10
+```
+
+Edit the email copy in:
+
+```text
+src/flakeblade_lead_engine/email_outreach/templates.py
+```
 
 ### Manual Recipient List
 

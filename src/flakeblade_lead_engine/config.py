@@ -17,6 +17,11 @@ class Settings:
     twilio_account_sid: str | None = None
     twilio_auth_token: str | None = None
     twilio_from_number: str | None = None
+    smtp_host: str | None = None
+    smtp_port: int = 587
+    smtp_username: str | None = None
+    smtp_password: str | None = None
+    smtp_from_email: str | None = None
     output_csv: Path = PROJECT_ROOT / "data" / "processed" / "companies.csv"
     output_json: Path = PROJECT_ROOT / "data" / "public" / "canada_leads.json"
     radius_meters: int = 40000
@@ -38,6 +43,11 @@ def load_settings() -> Settings:
         twilio_account_sid=os.getenv("TWILIO_ACCOUNT_SID"),
         twilio_auth_token=os.getenv("TWILIO_AUTH_TOKEN"),
         twilio_from_number=os.getenv("TWILIO_FROM_NUMBER"),
+        smtp_host=os.getenv("SMTP_HOST"),
+        smtp_port=int(os.getenv("SMTP_PORT", "587")),
+        smtp_username=os.getenv("SMTP_USERNAME"),
+        smtp_password=os.getenv("SMTP_PASSWORD"),
+        smtp_from_email=os.getenv("SMTP_FROM_EMAIL"),
     )
 
 
@@ -49,6 +59,11 @@ def load_sms_settings() -> Settings:
         twilio_account_sid=os.getenv("TWILIO_ACCOUNT_SID"),
         twilio_auth_token=os.getenv("TWILIO_AUTH_TOKEN"),
         twilio_from_number=os.getenv("TWILIO_FROM_NUMBER"),
+        smtp_host=os.getenv("SMTP_HOST"),
+        smtp_port=int(os.getenv("SMTP_PORT", "587")),
+        smtp_username=os.getenv("SMTP_USERNAME"),
+        smtp_password=os.getenv("SMTP_PASSWORD"),
+        smtp_from_email=os.getenv("SMTP_FROM_EMAIL"),
     )
 
 
@@ -65,4 +80,25 @@ def load_google_places_settings() -> Settings:
         twilio_account_sid=os.getenv("TWILIO_ACCOUNT_SID"),
         twilio_auth_token=os.getenv("TWILIO_AUTH_TOKEN"),
         twilio_from_number=os.getenv("TWILIO_FROM_NUMBER"),
+        smtp_host=os.getenv("SMTP_HOST"),
+        smtp_port=int(os.getenv("SMTP_PORT", "587")),
+        smtp_username=os.getenv("SMTP_USERNAME"),
+        smtp_password=os.getenv("SMTP_PASSWORD"),
+        smtp_from_email=os.getenv("SMTP_FROM_EMAIL"),
+    )
+
+
+def load_email_settings() -> Settings:
+    load_dotenv(PROJECT_ROOT / ".env")
+    return Settings(
+        yelp_api_key=os.getenv("YELP_API_KEY", ""),
+        google_maps_api_key=os.getenv("GOOGLE_MAPS_API_KEY"),
+        twilio_account_sid=os.getenv("TWILIO_ACCOUNT_SID"),
+        twilio_auth_token=os.getenv("TWILIO_AUTH_TOKEN"),
+        twilio_from_number=os.getenv("TWILIO_FROM_NUMBER"),
+        smtp_host=os.getenv("SMTP_HOST"),
+        smtp_port=int(os.getenv("SMTP_PORT", "587")),
+        smtp_username=os.getenv("SMTP_USERNAME"),
+        smtp_password=os.getenv("SMTP_PASSWORD"),
+        smtp_from_email=os.getenv("SMTP_FROM_EMAIL"),
     )
