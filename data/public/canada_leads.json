@@ -1,82 +1,82 @@
 {
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-09-01",
   "totals": {
-    "companies": 4077,
-    "cities": 72,
+    "companies": 4113,
+    "cities": 68,
     "service_status": "both",
     "services": [
       "lawn_mowing",
       "snow_removal"
     ],
     "service_counts": {
-      "lawn_mowing": 2575,
-      "snow_removal": 1502
+      "lawn_mowing": 2612,
+      "snow_removal": 1501
     }
   },
   "regions": [
     {
       "region": "Toronto",
-      "companies": 1440,
+      "companies": 1456,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 950,
+        "lawn_mowing": 966,
         "snow_removal": 490
       }
     },
     {
       "region": "Montreal",
-      "companies": 766,
+      "companies": 763,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 400,
-        "snow_removal": 366
+        "lawn_mowing": 399,
+        "snow_removal": 364
       }
     },
     {
       "region": "Vancouver",
-      "companies": 670,
+      "companies": 673,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 448,
+        "lawn_mowing": 451,
         "snow_removal": 222
       }
     },
     {
       "region": "Ottawa",
-      "companies": 642,
+      "companies": 651,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 396,
+        "lawn_mowing": 405,
         "snow_removal": 246
       }
     },
     {
       "region": "Calgary",
-      "companies": 559,
+      "companies": 570,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 381,
-        "snow_removal": 178
+        "lawn_mowing": 391,
+        "snow_removal": 179
       }
     }
   ],
@@ -85,24 +85,24 @@
       "region": "Montreal",
       "city": "Montreal",
       "companies": 396,
-      "latitude": 45.53431453847555,
-      "longitude": -73.64659897456215,
+      "latitude": 45.53501806412473,
+      "longitude": -73.64938901748901,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 214,
-        "snow_removal": 182
+        "lawn_mowing": 216,
+        "snow_removal": 180
       }
     },
     {
       "region": "Ottawa",
       "city": "Kanata",
-      "companies": 390,
-      "latitude": 45.33566027409334,
-      "longitude": -75.7518584317162,
+      "companies": 388,
+      "latitude": 45.33305314601132,
+      "longitude": -75.7562668125363,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -110,223 +110,95 @@
       ],
       "service_counts": {
         "lawn_mowing": 234,
-        "snow_removal": 156
+        "snow_removal": 154
       }
     },
     {
       "region": "Vancouver",
       "city": "Surrey",
-      "companies": 372,
-      "latitude": 49.16796350612861,
-      "longitude": -122.86205909731135,
+      "companies": 371,
+      "latitude": 49.16508026282128,
+      "longitude": -122.85838960339433,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 210,
-        "snow_removal": 162
+        "lawn_mowing": 211,
+        "snow_removal": 160
       }
     },
     {
       "region": "Toronto",
       "city": "Mississauga",
       "companies": 369,
-      "latitude": 43.64506966432882,
-      "longitude": -79.62722319355764,
+      "latitude": 43.642923878096205,
+      "longitude": -79.62908522299371,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 233,
-        "snow_removal": 136
+        "lawn_mowing": 234,
+        "snow_removal": 135
       }
     },
     {
       "region": "Calgary",
       "city": "Calgary",
-      "companies": 330,
-      "latitude": 51.04561091953442,
-      "longitude": -114.05029277853116,
+      "companies": 329,
+      "latitude": 51.0462811412558,
+      "longitude": -114.05606219113125,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 235,
+        "lawn_mowing": 234,
         "snow_removal": 95
       }
     },
     {
       "region": "Toronto",
-      "city": "Whitby",
-      "companies": 180,
-      "latitude": 43.943544880355034,
-      "longitude": -78.8518497479856,
+      "city": "Markham",
+      "companies": 195,
+      "latitude": 43.87428956573929,
+      "longitude": -79.33618373040022,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 131,
-        "snow_removal": 49
+        "lawn_mowing": 127,
+        "snow_removal": 68
       }
     },
     {
       "region": "Toronto",
-      "city": "Markham",
-      "companies": 176,
-      "latitude": 43.88244511529381,
-      "longitude": -79.3172962695627,
+      "city": "Whitby",
+      "companies": 187,
+      "latitude": 43.93306633648224,
+      "longitude": -78.858927477178,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 116,
-        "snow_removal": 60
+        "lawn_mowing": 135,
+        "snow_removal": 52
       }
     },
     {
       "region": "Montreal",
       "city": "Granby",
-      "companies": 131,
-      "latitude": 45.53715550348168,
-      "longitude": -72.7737989044018,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 49,
-        "snow_removal": 82
-      }
-    },
-    {
-      "region": "Vancouver",
-      "city": "Vancouver",
-      "companies": 119,
-      "latitude": 49.268022508438264,
-      "longitude": -123.16041738946679,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 88,
-        "snow_removal": 31
-      }
-    },
-    {
-      "region": "Toronto",
-      "city": "Newmarket",
-      "companies": 109,
-      "latitude": 44.13478058779119,
-      "longitude": -79.50921883632498,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 72,
-        "snow_removal": 37
-      }
-    },
-    {
-      "region": "Toronto",
-      "city": "Burlington",
-      "companies": 106,
-      "latitude": 43.32584540187948,
-      "longitude": -79.93899436606294,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 65,
-        "snow_removal": 41
-      }
-    },
-    {
-      "region": "Toronto",
-      "city": "Oakville",
-      "companies": 100,
-      "latitude": 43.31027427212797,
-      "longitude": -79.75527559955876,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 61,
-        "snow_removal": 39
-      }
-    },
-    {
-      "region": "Toronto",
-      "city": "Brampton",
-      "companies": 95,
-      "latitude": 43.740586444177836,
-      "longitude": -79.73010892001986,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 67,
-        "snow_removal": 28
-      }
-    },
-    {
-      "region": "Ottawa",
-      "city": "Cornwall",
-      "companies": 92,
-      "latitude": 45.20631215547018,
-      "longitude": -74.62924474447402,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 49,
-        "snow_removal": 43
-      }
-    },
-    {
-      "region": "Calgary",
-      "city": "Airdrie",
-      "companies": 83,
-      "latitude": 51.236151569904465,
-      "longitude": -114.04636630758489,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 55,
-        "snow_removal": 28
-      }
-    },
-    {
-      "region": "Montreal",
-      "city": "Laval",
-      "companies": 83,
-      "latitude": 45.65046541653546,
-      "longitude": -73.82593520154491,
+      "companies": 133,
+      "latitude": 45.5381117909471,
+      "longitude": -72.77870601055476,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -334,31 +206,175 @@
       ],
       "service_counts": {
         "lawn_mowing": 50,
-        "snow_removal": 33
+        "snow_removal": 83
       }
     },
     {
-      "region": "Calgary",
-      "city": "Okotoks",
-      "companies": 74,
-      "latitude": 50.85107498635117,
-      "longitude": -113.9511522460827,
+      "region": "Vancouver",
+      "city": "Vancouver",
+      "companies": 122,
+      "latitude": 49.26490627174155,
+      "longitude": -123.15993698892281,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 49,
-        "snow_removal": 25
+        "lawn_mowing": 90,
+        "snow_removal": 32
+      }
+    },
+    {
+      "region": "Toronto",
+      "city": "Newmarket",
+      "companies": 106,
+      "latitude": 44.12057664645835,
+      "longitude": -79.52139386920027,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 74,
+        "snow_removal": 32
+      }
+    },
+    {
+      "region": "Toronto",
+      "city": "Burlington",
+      "companies": 104,
+      "latitude": 43.322860919423455,
+      "longitude": -79.90856129927285,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 61,
+        "snow_removal": 43
+      }
+    },
+    {
+      "region": "Toronto",
+      "city": "Oakville",
+      "companies": 97,
+      "latitude": 43.30948873077751,
+      "longitude": -79.78923151975123,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 61,
+        "snow_removal": 36
+      }
+    },
+    {
+      "region": "Toronto",
+      "city": "Brampton",
+      "companies": 94,
+      "latitude": 43.73116795966525,
+      "longitude": -79.72746484042652,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 70,
+        "snow_removal": 24
+      }
+    },
+    {
+      "region": "Ottawa",
+      "city": "Cornwall",
+      "companies": 93,
+      "latitude": 45.21149118049265,
+      "longitude": -74.61299340844693,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 51,
+        "snow_removal": 42
+      }
+    },
+    {
+      "region": "Calgary",
+      "city": "Airdrie",
+      "companies": 88,
+      "latitude": 51.23817735143386,
+      "longitude": -114.05718268624047,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 57,
+        "snow_removal": 31
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "Laval",
+      "companies": 81,
+      "latitude": 45.65144769540324,
+      "longitude": -73.80341040890137,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 47,
+        "snow_removal": 34
+      }
+    },
+    {
+      "region": "Calgary",
+      "city": "Okotoks",
+      "companies": 73,
+      "latitude": 50.84710911511914,
+      "longitude": -113.96559993682449,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 50,
+        "snow_removal": 23
       }
     },
     {
       "region": "Toronto",
       "city": "Caledon",
-      "companies": 64,
-      "latitude": 43.94897594001986,
-      "longitude": -80.07753771696392,
+      "companies": 70,
+      "latitude": 43.94399583275321,
+      "longitude": -80.0958755435661,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 41,
+        "snow_removal": 29
+      }
+    },
+    {
+      "region": "Ottawa",
+      "city": "Orleans",
+      "companies": 54,
+      "latitude": 45.47355148585883,
+      "longitude": -75.42637304013186,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -366,111 +382,63 @@
       ],
       "service_counts": {
         "lawn_mowing": 38,
-        "snow_removal": 26
+        "snow_removal": 16
       }
     },
     {
       "region": "Toronto",
       "city": "Vaughan",
-      "companies": 53,
-      "latitude": 43.8297831505277,
-      "longitude": -79.52970796498823,
+      "companies": 50,
+      "latitude": 43.82241218426443,
+      "longitude": -79.50677634661372,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 37,
-        "snow_removal": 16
-      }
-    },
-    {
-      "region": "Ottawa",
-      "city": "Orleans",
-      "companies": 49,
-      "latitude": 45.46684164769224,
-      "longitude": -75.4377695603066,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 35,
+        "lawn_mowing": 36,
         "snow_removal": 14
       }
     },
     {
       "region": "Vancouver",
       "city": "Langley Township",
-      "companies": 48,
-      "latitude": 49.11696631263021,
-      "longitude": -122.49094123193142,
+      "companies": 44,
+      "latitude": 49.116430401350605,
+      "longitude": -122.50017010266234,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 40,
-        "snow_removal": 8
+        "lawn_mowing": 34,
+        "snow_removal": 10
       }
     },
     {
       "region": "Ottawa",
       "city": "Nepean",
-      "companies": 37,
-      "latitude": 45.36312987165502,
-      "longitude": -75.57004232498299,
+      "companies": 39,
+      "latitude": 45.37611711755444,
+      "longitude": -75.57832497697639,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 28,
-        "snow_removal": 9
+        "lawn_mowing": 29,
+        "snow_removal": 10
       }
     },
     {
       "region": "Toronto",
       "city": "Uxbridge",
-      "companies": 35,
-      "latitude": 44.27814005946477,
-      "longitude": -79.07086643257979,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 21,
-        "snow_removal": 14
-      }
-    },
-    {
-      "region": "Toronto",
-      "city": "Ajax",
-      "companies": 31,
-      "latitude": 43.83520294393932,
-      "longitude": -79.0900404803575,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 18,
-        "snow_removal": 13
-      }
-    },
-    {
-      "region": "Montreal",
-      "city": "Bromont",
-      "companies": 30,
-      "latitude": 45.42730340241859,
-      "longitude": -72.70057018925412,
+      "companies": 36,
+      "latitude": 44.2539378782323,
+      "longitude": -79.06260779381321,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -478,47 +446,95 @@
       ],
       "service_counts": {
         "lawn_mowing": 22,
-        "snow_removal": 8
+        "snow_removal": 14
+      }
+    },
+    {
+      "region": "Toronto",
+      "city": "Ajax",
+      "companies": 34,
+      "latitude": 43.830468621240044,
+      "longitude": -79.10517427829338,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 21,
+        "snow_removal": 13
       }
     },
     {
       "region": "Toronto",
       "city": "Milton",
-      "companies": 30,
-      "latitude": 43.542647757927824,
-      "longitude": -79.95706338737916,
+      "companies": 33,
+      "latitude": 43.541925500509265,
+      "longitude": -79.96319053670835,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 21,
-        "snow_removal": 9
+        "lawn_mowing": 23,
+        "snow_removal": 10
+      }
+    },
+    {
+      "region": "Calgary",
+      "city": "Martindale",
+      "companies": 27,
+      "latitude": 51.089704786224814,
+      "longitude": -113.96924353588612,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 17,
+        "snow_removal": 10
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "Bromont",
+      "companies": 27,
+      "latitude": 45.43247032987161,
+      "longitude": -72.58293598806013,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 19,
+        "snow_removal": 8
       }
     },
     {
       "region": "Vancouver",
       "city": "Maple Ridge",
-      "companies": 28,
-      "latitude": 49.167126049630944,
-      "longitude": -122.47431194068318,
+      "companies": 27,
+      "latitude": 49.17135482650928,
+      "longitude": -122.46809602202572,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 21,
+        "lawn_mowing": 20,
         "snow_removal": 7
       }
     },
     {
       "region": "Toronto",
       "city": "Halton Hills",
-      "companies": 27,
-      "latitude": 43.61299109947887,
-      "longitude": -79.9998714721619,
+      "companies": 26,
+      "latitude": 43.61363784706638,
+      "longitude": -80.01928907186044,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -526,111 +542,47 @@
       ],
       "service_counts": {
         "lawn_mowing": 19,
-        "snow_removal": 8
+        "snow_removal": 7
+      }
+    },
+    {
+      "region": "Vancouver",
+      "city": "Burnaby",
+      "companies": 26,
+      "latitude": 49.25504360819903,
+      "longitude": -122.84341645712058,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 23,
+        "snow_removal": 3
       }
     },
     {
       "region": "Montreal",
       "city": "Kirkland",
-      "companies": 23,
-      "latitude": 45.48144148741489,
-      "longitude": -74.17498786711154,
+      "companies": 25,
+      "latitude": 45.49179325779472,
+      "longitude": -74.22498556467558,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 9,
-        "snow_removal": 14
-      }
-    },
-    {
-      "region": "Toronto",
-      "city": "Stouffville",
-      "companies": 22,
-      "latitude": 43.98183863116637,
-      "longitude": -79.25876343779522,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 19,
-        "snow_removal": 3
+        "lawn_mowing": 12,
+        "snow_removal": 13
       }
     },
     {
       "region": "Calgary",
       "city": "Edgemont",
-      "companies": 21,
-      "latitude": 51.10609221683653,
-      "longitude": -114.22361882851644,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 13,
-        "snow_removal": 8
-      }
-    },
-    {
-      "region": "Calgary",
-      "city": "Martindale",
-      "companies": 21,
-      "latitude": 51.09056289657475,
-      "longitude": -113.97498781756791,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 12,
-        "snow_removal": 9
-      }
-    },
-    {
-      "region": "Montreal",
-      "city": "Saint-Hyacinthe",
-      "companies": 18,
-      "latitude": 46.03275280170981,
-      "longitude": -73.35136602317134,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 7,
-        "snow_removal": 11
-      }
-    },
-    {
-      "region": "Ottawa",
-      "city": "Stittsville",
-      "companies": 18,
-      "latitude": 45.12274793531136,
-      "longitude": -76.01348564995152,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 12,
-        "snow_removal": 6
-      }
-    },
-    {
-      "region": "Toronto",
-      "city": "Richmond Hill",
-      "companies": 18,
-      "latitude": 43.87438136677086,
-      "longitude": -79.44385625777778,
+      "companies": 23,
+      "latitude": 51.10648682099912,
+      "longitude": -114.21184726836248,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -638,31 +590,47 @@
       ],
       "service_counts": {
         "lawn_mowing": 14,
-        "snow_removal": 4
+        "snow_removal": 9
       }
     },
     {
-      "region": "Vancouver",
-      "city": "Burnaby",
-      "companies": 18,
-      "latitude": 49.26122181349228,
-      "longitude": -122.85660573401164,
+      "region": "Toronto",
+      "city": "Richmond Hill",
+      "companies": 21,
+      "latitude": 43.89756876822591,
+      "longitude": -79.44068229851932,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 16,
-        "snow_removal": 2
+        "lawn_mowing": 17,
+        "snow_removal": 4
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "Saint-Lambert",
+      "companies": 20,
+      "latitude": 45.50162145609852,
+      "longitude": -73.33462580425439,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 10,
+        "snow_removal": 10
       }
     },
     {
       "region": "Vancouver",
-      "city": "Coquitlam",
+      "city": "North Vancouver District",
       "companies": 18,
-      "latitude": 49.25477422665961,
-      "longitude": -122.7768511340659,
+      "latitude": 49.32492434227872,
+      "longitude": -123.01540805386851,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -674,107 +642,11 @@
       }
     },
     {
-      "region": "Vancouver",
-      "city": "Richmond",
-      "companies": 18,
-      "latitude": 48.98433327269205,
-      "longitude": -123.14729368371624,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 14,
-        "snow_removal": 4
-      }
-    },
-    {
-      "region": "Montreal",
-      "city": "Saint-Lambert",
-      "companies": 16,
-      "latitude": 45.4349187044433,
-      "longitude": -73.29277660450512,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 9,
-        "snow_removal": 7
-      }
-    },
-    {
-      "region": "Toronto",
-      "city": "Pickering",
-      "companies": 16,
-      "latitude": 43.800763104599,
-      "longitude": -79.23901171584242,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 13,
-        "snow_removal": 3
-      }
-    },
-    {
-      "region": "Vancouver",
-      "city": "North Vancouver District",
-      "companies": 15,
-      "latitude": 49.3276788520678,
-      "longitude": -123.00536052930889,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 13,
-        "snow_removal": 2
-      }
-    },
-    {
       "region": "Ottawa",
       "city": "Cardinal Creek",
-      "companies": 14,
-      "latitude": 45.370853694086385,
-      "longitude": -75.20148200332247,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 8,
-        "snow_removal": 6
-      }
-    },
-    {
-      "region": "Ottawa",
-      "city": "Clarence-Rockland",
-      "companies": 14,
-      "latitude": 45.578667772830784,
-      "longitude": -75.09057643938479,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 9,
-        "snow_removal": 5
-      }
-    },
-    {
-      "region": "Vancouver",
-      "city": "West Vancouver",
-      "companies": 14,
-      "latitude": 49.31849642058064,
-      "longitude": -123.51023472857143,
+      "companies": 17,
+      "latitude": 45.356812000597586,
+      "longitude": -75.19203300790014,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -782,31 +654,63 @@
       ],
       "service_counts": {
         "lawn_mowing": 11,
-        "snow_removal": 3
+        "snow_removal": 6
       }
     },
     {
-      "region": "Calgary",
-      "city": "Ogden",
-      "companies": 13,
-      "latitude": 51.00137610352567,
-      "longitude": -114.0471674061521,
+      "region": "Ottawa",
+      "city": "Stittsville",
+      "companies": 16,
+      "latitude": 45.1114989047539,
+      "longitude": -76.05856373682046,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 9,
-        "snow_removal": 4
+        "lawn_mowing": 10,
+        "snow_removal": 6
+      }
+    },
+    {
+      "region": "Toronto",
+      "city": "Stouffville",
+      "companies": 16,
+      "latitude": 43.98412218096892,
+      "longitude": -79.23987286272516,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 13,
+        "snow_removal": 3
+      }
+    },
+    {
+      "region": "Vancouver",
+      "city": "Richmond",
+      "companies": 16,
+      "latitude": 49.01657891927855,
+      "longitude": -123.14079746293075,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 13,
+        "snow_removal": 3
       }
     },
     {
       "region": "Montreal",
-      "city": "Brossard",
-      "companies": 13,
-      "latitude": 45.42964548095942,
-      "longitude": -73.36305697706733,
+      "city": "Saint-Hyacinthe",
+      "companies": 15,
+      "latitude": 46.067684280093225,
+      "longitude": -73.35199736719795,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -814,31 +718,47 @@
       ],
       "service_counts": {
         "lawn_mowing": 6,
-        "snow_removal": 7
+        "snow_removal": 9
       }
     },
     {
       "region": "Montreal",
-      "city": "Dorval",
+      "city": "Brossard",
       "companies": 13,
-      "latitude": 45.44880955291194,
-      "longitude": -73.86267480954808,
+      "latitude": 45.34356391364098,
+      "longitude": -73.27642026384653,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 11,
-        "snow_removal": 2
+        "lawn_mowing": 7,
+        "snow_removal": 6
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "Dorval",
+      "companies": 13,
+      "latitude": 45.46180798339056,
+      "longitude": -73.87399624510634,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 9,
+        "snow_removal": 4
       }
     },
     {
       "region": "Ottawa",
-      "city": "Ottawa",
+      "city": "Clarence-Rockland",
       "companies": 13,
-      "latitude": 45.337477904321084,
-      "longitude": -75.63729141800607,
+      "latitude": 45.580702556894686,
+      "longitude": -75.07663403472208,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -850,27 +770,43 @@
       }
     },
     {
-      "region": "Montreal",
-      "city": "Longueuil",
-      "companies": 12,
-      "latitude": 45.589672348201965,
-      "longitude": -73.44928763941819,
+      "region": "Ottawa",
+      "city": "Ottawa",
+      "companies": 13,
+      "latitude": 45.34189446353458,
+      "longitude": -75.63785976273263,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 4,
-        "snow_removal": 8
+        "lawn_mowing": 8,
+        "snow_removal": 5
       }
     },
     {
       "region": "Ottawa",
       "city": "Richmond",
+      "companies": 13,
+      "latitude": 44.967589818064276,
+      "longitude": -75.8044696340819,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 11,
+        "snow_removal": 2
+      }
+    },
+    {
+      "region": "Calgary",
+      "city": "Ogden",
       "companies": 12,
-      "latitude": 44.9674505328995,
-      "longitude": -75.81890585692206,
+      "latitude": 51.001494945486144,
+      "longitude": -114.04465302333143,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -882,19 +818,83 @@
       }
     },
     {
-      "region": "Toronto",
-      "city": "Aurora",
-      "companies": 9,
-      "latitude": 43.96481750802255,
-      "longitude": -79.4551924646351,
+      "region": "Vancouver",
+      "city": "Coquitlam",
+      "companies": 12,
+      "latitude": 49.260739031469505,
+      "longitude": -122.7761673175,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 5,
-        "snow_removal": 4
+        "lawn_mowing": 10,
+        "snow_removal": 2
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "Longueuil",
+      "companies": 11,
+      "latitude": 45.58958738022903,
+      "longitude": -73.4560744592595,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 4,
+        "snow_removal": 7
+      }
+    },
+    {
+      "region": "Toronto",
+      "city": "Pickering",
+      "companies": 11,
+      "latitude": 43.77253651417501,
+      "longitude": -79.23064880909091,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 8,
+        "snow_removal": 3
+      }
+    },
+    {
+      "region": "Vancouver",
+      "city": "West Vancouver",
+      "companies": 11,
+      "latitude": 49.29025585346626,
+      "longitude": -123.61305159090908,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 8,
+        "snow_removal": 3
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "Candiac",
+      "companies": 10,
+      "latitude": 45.292258768610246,
+      "longitude": -73.52849434813395,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 8,
+        "snow_removal": 2
       }
     },
     {
@@ -914,75 +914,89 @@
       }
     },
     {
-      "region": "Montreal",
-      "city": "Candiac",
-      "companies": 8,
-      "latitude": 45.311820980463075,
-      "longitude": -73.52460771101073,
+      "region": "Toronto",
+      "city": "Aurora",
+      "companies": 7,
+      "latitude": 43.97711810317184,
+      "longitude": -79.46091836024516,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 7,
-        "snow_removal": 1
-      }
-    },
-    {
-      "region": "Vancouver",
-      "city": "Port Coquitlam",
-      "companies": 6,
-      "latitude": 49.235093753254205,
-      "longitude": -122.78074086666665,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 5,
-        "snow_removal": 1
+        "lawn_mowing": 4,
+        "snow_removal": 3
       }
     },
     {
       "region": "Vancouver",
       "city": "White Rock",
-      "companies": 6,
-      "latitude": 48.95838107728679,
-      "longitude": -122.924301651058,
+      "companies": 7,
+      "latitude": 48.891275109102956,
+      "longitude": -122.99932270090686,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 5,
+        "lawn_mowing": 6,
         "snow_removal": 1
-      }
-    },
-    {
-      "region": "Montreal",
-      "city": "Boucherville",
-      "companies": 5,
-      "latitude": 45.621014299072264,
-      "longitude": -73.53154781591797,
-      "service_status": "both",
-      "services": [
-        "lawn_mowing",
-        "snow_removal"
-      ],
-      "service_counts": {
-        "lawn_mowing": 3,
-        "snow_removal": 2
       }
     },
     {
       "region": "Vancouver",
       "city": "Delta",
+      "companies": 6,
+      "latitude": 49.1597231942824,
+      "longitude": -122.89410155663215,
+      "service_status": "lawn_mowing",
+      "services": [
+        "lawn_mowing"
+      ],
+      "service_counts": {
+        "lawn_mowing": 6
+      }
+    },
+    {
+      "region": "Calgary",
+      "city": "Arbour Lake",
       "companies": 5,
-      "latitude": 49.15826048113887,
-      "longitude": -122.90130706195858,
+      "latitude": 51.12905446060843,
+      "longitude": -114.0866869387618,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 2,
+        "snow_removal": 3
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "La Prairie",
+      "companies": 5,
+      "latitude": 45.33472296288326,
+      "longitude": -73.58274837995253,
+      "service_status": "both",
+      "services": [
+        "lawn_mowing",
+        "snow_removal"
+      ],
+      "service_counts": {
+        "lawn_mowing": 1,
+        "snow_removal": 4
+      }
+    },
+    {
+      "region": "Ottawa",
+      "city": "Embrun",
+      "companies": 5,
+      "latitude": 45.27082277523847,
+      "longitude": -75.40931494165723,
       "service_status": "lawn_mowing",
       "services": [
         "lawn_mowing"
@@ -992,19 +1006,33 @@
       }
     },
     {
-      "region": "Calgary",
-      "city": "Arbour Lake",
+      "region": "Vancouver",
+      "city": "Port Coquitlam",
+      "companies": 5,
+      "latitude": 49.24032850390504,
+      "longitude": -122.77399304000001,
+      "service_status": "lawn_mowing",
+      "services": [
+        "lawn_mowing"
+      ],
+      "service_counts": {
+        "lawn_mowing": 5
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "Boucherville",
       "companies": 4,
-      "latitude": 51.130588705065925,
-      "longitude": -114.09321519845226,
+      "latitude": 45.634215373840334,
+      "longitude": -73.53323476989746,
       "service_status": "both",
       "services": [
         "lawn_mowing",
         "snow_removal"
       ],
       "service_counts": {
-        "lawn_mowing": 1,
-        "snow_removal": 3
+        "lawn_mowing": 3,
+        "snow_removal": 1
       }
     },
     {
@@ -1024,19 +1052,31 @@
       }
     },
     {
-      "region": "Montreal",
-      "city": "La Prairie",
+      "region": "Vancouver",
+      "city": "Cloverdale",
       "companies": 4,
-      "latitude": 45.32777495360408,
-      "longitude": -73.55280572494067,
-      "service_status": "both",
+      "latitude": 49.115147683752454,
+      "longitude": -122.7132360203125,
+      "service_status": "lawn_mowing",
       "services": [
-        "lawn_mowing",
-        "snow_removal"
+        "lawn_mowing"
       ],
       "service_counts": {
-        "lawn_mowing": 1,
-        "snow_removal": 3
+        "lawn_mowing": 4
+      }
+    },
+    {
+      "region": "Vancouver",
+      "city": "New Westminster",
+      "companies": 4,
+      "latitude": 49.207427623608396,
+      "longitude": -122.91599509692375,
+      "service_status": "lawn_mowing",
+      "services": [
+        "lawn_mowing"
+      ],
+      "service_counts": {
+        "lawn_mowing": 4
       }
     },
     {
@@ -1057,38 +1097,24 @@
     },
     {
       "region": "Montreal",
-      "city": "Sainte-Catherine",
-      "companies": 3,
-      "latitude": 45.410945380799284,
-      "longitude": -73.68898116441784,
-      "service_status": "snow_removal",
-      "services": [
-        "snow_removal"
-      ],
-      "service_counts": {
-        "snow_removal": 3
-      }
-    },
-    {
-      "region": "Montreal",
       "city": "Chambly",
-      "companies": 2,
-      "latitude": 45.40942905000001,
-      "longitude": -73.30635815,
+      "companies": 3,
+      "latitude": 45.39599603333334,
+      "longitude": -73.32968876666668,
       "service_status": "lawn_mowing",
       "services": [
         "lawn_mowing"
       ],
       "service_counts": {
-        "lawn_mowing": 2
+        "lawn_mowing": 3
       }
     },
     {
-      "region": "Montreal",
-      "city": "Otterburn Park",
+      "region": "Calgary",
+      "city": "Westgate",
       "companies": 2,
-      "latitude": 46.004277708302666,
-      "longitude": -73.4340766873886,
+      "latitude": 50.58247568205,
+      "longitude": -112.439794709,
       "service_status": "both",
       "services": [
         "lawn_mowing",
@@ -1100,87 +1126,31 @@
       }
     },
     {
-      "region": "Ottawa",
-      "city": "Embrun",
-      "companies": 2,
-      "latitude": 45.29374175309617,
-      "longitude": -75.40254195914306,
-      "service_status": "lawn_mowing",
-      "services": [
-        "lawn_mowing"
-      ],
-      "service_counts": {
-        "lawn_mowing": 2
-      }
-    },
-    {
-      "region": "Vancouver",
-      "city": "Cloverdale",
-      "companies": 2,
-      "latitude": 49.1105735675049,
-      "longitude": -122.719007890625,
-      "service_status": "lawn_mowing",
-      "services": [
-        "lawn_mowing"
-      ],
-      "service_counts": {
-        "lawn_mowing": 2
-      }
-    },
-    {
-      "region": "Calgary",
-      "city": "Country Hills",
+      "region": "Montreal",
+      "city": "Otterburn Park",
       "companies": 1,
-      "latitude": 51.09406999999999,
-      "longitude": -114.05116,
+      "latitude": 46.01671535,
+      "longitude": -73.44598868,
+      "service_status": "lawn_mowing",
+      "services": [
+        "lawn_mowing"
+      ],
+      "service_counts": {
+        "lawn_mowing": 1
+      }
+    },
+    {
+      "region": "Montreal",
+      "city": "Sainte-Catherine",
+      "companies": 1,
+      "latitude": 45.45943,
+      "longitude": -73.66399,
       "service_status": "snow_removal",
       "services": [
         "snow_removal"
       ],
       "service_counts": {
         "snow_removal": 1
-      }
-    },
-    {
-      "region": "Calgary",
-      "city": "Westgate",
-      "companies": 1,
-      "latitude": 51.0634709641,
-      "longitude": -114.048972018,
-      "service_status": "lawn_mowing",
-      "services": [
-        "lawn_mowing"
-      ],
-      "service_counts": {
-        "lawn_mowing": 1
-      }
-    },
-    {
-      "region": "Montreal",
-      "city": "McMasterville",
-      "companies": 1,
-      "latitude": 46.22172164916992,
-      "longitude": -73.63345336914062,
-      "service_status": "lawn_mowing",
-      "services": [
-        "lawn_mowing"
-      ],
-      "service_counts": {
-        "lawn_mowing": 1
-      }
-    },
-    {
-      "region": "Montreal",
-      "city": "Saint-Bruno-de-Montarville",
-      "companies": 1,
-      "latitude": 45.57831573,
-      "longitude": -73.35546875,
-      "service_status": "lawn_mowing",
-      "services": [
-        "lawn_mowing"
-      ],
-      "service_counts": {
-        "lawn_mowing": 1
       }
     },
     {
@@ -1196,46 +1166,18 @@
       "service_counts": {
         "lawn_mowing": 1
       }
-    },
-    {
-      "region": "Ottawa",
-      "city": "Russell",
-      "companies": 1,
-      "latitude": 45.1455184,
-      "longitude": -75.598246,
-      "service_status": "lawn_mowing",
-      "services": [
-        "lawn_mowing"
-      ],
-      "service_counts": {
-        "lawn_mowing": 1
-      }
-    },
-    {
-      "region": "Vancouver",
-      "city": "New Westminster",
-      "companies": 1,
-      "latitude": 49.23164,
-      "longitude": -122.88858,
-      "service_status": "lawn_mowing",
-      "services": [
-        "lawn_mowing"
-      ],
-      "service_counts": {
-        "lawn_mowing": 1
-      }
     }
   ],
   "services": [
     {
       "service": "lawn_mowing",
       "label": "Lawn Mowing",
-      "companies": 2575
+      "companies": 2612
     },
     {
       "service": "snow_removal",
       "label": "Snow removal",
-      "companies": 1502
+      "companies": 1501
     }
   ]
 }
